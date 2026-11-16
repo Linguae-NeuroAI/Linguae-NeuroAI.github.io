@@ -49,8 +49,8 @@
       <path d="M900 118 C780 30,470 30,330 112" fill="none" stroke="url(#gTop)" stroke-width="3" opacity=".35"/>
       <path class="flow" d="M900 118 C780 30,470 30,330 112" fill="none" stroke="url(#gTop)" stroke-width="5"/>
       <path d="M346 96 L326 115 L352 120" fill="none" stroke="var(--brain)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M430 384 C520 500,780 506,900 412" fill="none" stroke="url(#gBot)" stroke-width="3" opacity=".35"/>
-      <path class="flow" d="M430 384 C520 500,780 506,900 412" fill="none" stroke="url(#gBot)" stroke-width="5"/>
+      <path d="M430 384 C450 520,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="3" opacity=".35"/>
+      <path class="flow" d="M430 384 C450 520,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="5"/>
       <path d="M878 406 L904 409 L886 430" fill="none" stroke="var(--model)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
       <a href="#brain"><text class="arc-label" x="615" y="104" text-anchor="middle" fill="var(--brain)">AI for the brain</text></a>
