@@ -137,9 +137,10 @@ a:hover .hit, a:focus-visible .hit { opacity: 1; }
 .lead { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding: 28px; background: var(--card); border: 1.5px solid var(--line); border-radius: 20px; }
 .portrait { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: linear-gradient(135deg, var(--brain-tint), var(--model-tint)); display: grid; place-items: center; font: 700 3.4rem var(--display); color: var(--loop); }
 .lead .role { font: 600 1rem var(--display); color: var(--soft); margin: 4px 0 12px; }
-.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; padding: 8px 0 24px; }
+.people { display: grid; align-items: start; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; padding: 8px 0 24px; }
 .person { background: var(--card); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; }
-.person .role { font: 400 .9rem var(--display); color: var(--soft); }
+.person .role { font: 400 .9rem/1.4 var(--display); color: var(--soft); margin: 4px 0 0; }
+.person .topic { font-size: .95rem; line-height: 1.5; margin: 10px 0 0; }
 .slot { border: 1.5px dashed var(--soft); border-radius: 16px; padding: 18px; color: var(--soft); font-size: .95rem; }
 .join { margin: 16px 0 56px; padding: 28px; border-radius: 20px; background: linear-gradient(100deg, var(--brain-tint), var(--model-tint)); }
 .join h2 { margin-bottom: 10px; }

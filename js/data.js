@@ -228,6 +228,29 @@ window.SITE = {
       scholar: "https://scholar.google.com/citations?user=cNnJ5YUAAAAJ",
       bio: "Yair Lakretz is a CNRS research scientist at the Laboratoire de Sciences Cognitives et Psycholinguistique (LSCP), in the Department of Cognitive Studies of the École normale supérieure, where he heads the Linguae-NeuroAI team. He is a fellow of the Paris Artificial Intelligence Research Institute (PRAIRIE). His work asks how linguistic structure, from sounds and letters to syntax and meaning, is encoded and computed in the human brain and in artificial neural networks."
     },
-    members: []
+    /* group: "phd", "staff", "masters". co: co-supervisor. Leave topic empty if unknown. */
+    members: [
+      { group: "phd", name: "Michael Goodale", co: "Salvador Mascarenhas", topic: "Meta-learning and inductive biases in neural networks" },
+      { group: "phd", name: "Pablo Diego-Simón", co: "Jean-Rémi King", topic: "Syntax in language models (polar probes)" },
+      { group: "phd", name: "Louis Jalouzot", co: "Christophe Pallier", topic: "Encoding models and decoding language from fMRI" },
+      { group: "phd", name: "Maxence Pajot", co: "Stanislas Dehaene", topic: "" },
+      { group: "phd", name: "Victor Rambaud", co: "Salvador Mascarenhas", topic: "Cognitive maps in Transformers" },
+      { group: "phd", name: "Malo Renaudin", co: "", topic: "" },
+      { group: "phd", name: "Boubacar Sow", co: "", topic: "" },
+      { group: "staff", name: "Nafiseh Momeni", role: "Research assistant", co: "", topic: "Binding of phoneme identity and position; intracranial data analysis" },
+      { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings" },
+      { group: "masters", name: "Sara Martina", role: "Erasmus Mundus master's intern", co: "", topic: "Long-range agreement in language models" },
+      { group: "masters", name: "Yutong (Tony) Zhou", co: "Philippe Schlenker", topic: "Semantic and pragmatic inference in vision-language models" },
+      { group: "masters", name: "Baptiste Loreau Unger", co: "", topic: "" }
+    ],
+    visitors: ["Álvaro Cabana", "Bruno Bianchi"],
+    alumni: [
+      { name: "Louis Hayot", years: "2026", role: "Master's intern", topic: "Dual-route model of single-word processing, co-supervised with Emmanuel Mandonnet" },
+      { name: "Karina Musina", years: "2026", role: "Master's intern", topic: "Letter identity and letter position in vision models" },
+      { name: "Daniel Dager", years: "2025", role: "Master's intern", topic: "Neural model of word repetition" },
+      { name: "Ali Al-Azar", years: "2025", role: "Master's intern", topic: "" },
+      { name: "Mahdi Ranjbar", years: "2025", role: "Master's intern", topic: "" },
+      { name: "Harshit Morj", years: "2025", role: "Master's intern", topic: "" }
+    ]
   }
 };

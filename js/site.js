@@ -317,6 +317,15 @@
     </div>`;
   };
 
+  const group = (g, title, defRole) => {
+    const ms = D.team.members.filter(m => m.group === g);
+    if (!ms.length) return "";
+    return `<div class="section-head"><h2>${title}</h2></div><div class="people">${ms.map(m => `
+      <div class="person"><h3>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h3>
+        <p class="role">${esc(m.role || defRole)}${m.co ? `, co-supervised with ${esc(m.co)}` : ""}</p>
+        ${m.topic ? `<p class="topic">${esc(m.topic)}</p>` : ""}</div>`).join("")}</div>`;
+  };
+
   const team = () => {
     const L = D.team.lead, initials = L.name.split(" ").map(w => w[0]).join("");
     return `
@@ -327,12 +336,12 @@
         <div><h2>${L.name}</h2><p class="role">${L.role}</p><p>${L.bio}</p>
           <p><a href="${L.url}">Personal page</a> &nbsp; <a href="${L.scholar}">Google Scholar</a></p></div>
       </section>
-      <div class="section-head"><h2>Members</h2></div>
-      <div class="people">
-        ${D.team.members.length
-          ? D.team.members.map(m => `<div class="person"><h3>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h3><p class="role">${esc(m.role || "")}</p><p style="font-size:.95rem;margin:8px 0 0">${esc(m.topic || "")}</p></div>`).join("")
-          : `<div class="slot">PhD students, postdocs, engineers and interns will be listed here. Add them in <code>js/data.js</code> under <code>team.members</code>.</div>`}
-      </div>
+      ${group("phd", "PhD students", "PhD student")}
+      ${group("staff", "Research staff", "")}
+      ${group("masters", "Master's interns", "Master's intern")}
+      ${D.team.visitors.length ? `<div class="section-head"><h2>Visiting researchers</h2></div><p>${D.team.visitors.map(esc).join(", ")}</p>` : ""}
+      ${D.team.alumni.length ? `<div class="section-head"><h2>Alumni</h2></div>
+      <ul class="rows">${D.team.alumni.map(m => `<li><span class="yr">${esc(m.years)}</span><div><h3>${esc(m.name)}</h3><p class="meta">${esc(m.role)}${m.topic ? `. ${esc(m.topic)}` : ""}</p></div></li>`).join("")}</ul>` : ""}
       <section class="join">
         <h2>Join us</h2>
         <p>We welcome students and researchers from neuroscience, linguistics, computer science and physics who want to work between brains and models. Master's internships, PhD projects and postdoctoral positions open regularly.</p>
