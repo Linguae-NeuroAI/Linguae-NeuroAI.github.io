@@ -235,7 +235,10 @@
       </section>
 
       <section class="statement">
-        <p>Language sets humans apart, and how neurons compute it is still an open question. Neural networks now process language well enough to be studied as model organisms: every unit can be recorded, every connection cut. We use them to explain what we record in the human brain, and we use the brain to build models that learn and process language the way people do.</p>
+        <p>We study the neural mechanisms of language processing, that is, how the brain represents sounds, letters, words and sentences, and how it combines them into meaning.</p>
+        <p>To do this, we use neural AI models. Language models learn to process language from large amounts of text and speech. Unlike the brain, they can be examined in full detail. We can look at the activity of every unit in the network and switch units off to see what breaks. This lets us find mechanisms in the model that might also be used by the brain, and turn them into precise predictions.</p>
+        <p>We test these predictions in human brain data. We use fMRI and MEG to follow language processing across the whole brain in healthy volunteers. We also use high-resolution intracranial recordings, down to the activity of single neurons, made in patients undergoing neurosurgery, in collaboration with neurosurgical teams around the world.</p>
+        <p>In the other direction, we use what we learn from neuroscience to build new neural AI models that are more human-like. Models that learn and process language more like people do are also better at predicting the mechanisms we find in the brain.</p>
       </section>
 
       <section class="directions" aria-label="Research directions">
