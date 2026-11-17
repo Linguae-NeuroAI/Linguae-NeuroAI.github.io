@@ -43,6 +43,14 @@ window.SITE = {
       figure: { schematic: "neurons",
         caption: "Each row is one region, each column one way of presenting the sentence. Ticks stand for spikes. Sensory regions fire for one modality; middle temporal and inferior frontal neurons fire for both." } },
 
+    { id: "hier-seq", year: 2026, featured: true, side: ["brain", "models"], methods: ["meg"], themes: ["limits"],
+      title: "Disentangling hierarchical and sequential computations during sentence processing",
+      authors: "C.-N. Zacharopoulos, S. Dehaene, Y. Lakretz",
+      venue: "Cortex 199", url: "https://doi.org/10.1016/j.cortex.2026.02.004",
+      finding: "Does the brain follow the tree structure of a sentence, or also simpler word-to-word transitions? In a linguistic version of the local-global paradigm, participants heard sentences with long-range subject-verb agreement while we recorded MEG, and we separately manipulated violations of hierarchical and of sequential expectations. The brain responded to hierarchical violations but was largely unaffected by sequential ones. An LSTM language model run on the same sentences showed both kinds of effect.",
+      figure: { schematic: "hierseq",
+        caption: "The verb agrees with the main subject across the tree (solid arc), but it also follows the nearer noun in the word sequence (dashed arc). Brain responses tracked only the first relation; the LSTM tracked both." } },
+
     { id: "stg-phonemes", year: 2021, featured: true, side: ["brain"], methods: ["neurons"],
       title: "Single-cell activity in human STG during perception of phonemes is organized according to manner of articulation",
       authors: "Y. Lakretz, O. Ossmy, N. Friedmann, R. Mukamel, I. Fried",

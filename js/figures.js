@@ -169,5 +169,22 @@
     return svg(o, "Short and long embedded dependencies");
   };
 
+  F.hierseq = () => {
+    const words = ["The", "keys", "to", "the", "cabinet", "are"], xs = [24, 66, 108, 144, 196, 262];
+    let o = words.map((w, i) => t(xs[i], 112, w, { bold: i === 1 || i === 4 || i === 5, fill: i === 1 ? M : i === 4 ? B : i === 5 ? I : I })).join("");
+    o += arc(66, 262, 96, 74, M) + arc(196, 262, 96, 30, B, true);
+    o += t(164, 30, "hierarchical: subject to verb", { fill: M });
+    o += t(229, 56, "sequential", { fill: B });
+    o += `<line x1="14" y1="128" x2="306" y2="128" stroke="${L}"/>`;
+    const row = (y, lab, h, sq) => {
+      o += t(14, y + 14, lab, { anchor: "start", bold: true });
+      o += `<rect x="128" y="${y}" width="${h}" height="12" rx="3" fill="${M}"/>`;
+      o += `<rect x="128" y="${y + 16}" width="${sq}" height="12" rx="3" fill="${B}" ${sq < 8 ? 'opacity=".5"' : ""}/>`;
+    };
+    row(140, "Brain (MEG)", 150, 6);
+    row(170, "LSTM", 140, 120);
+    return svg(o, "Hierarchical and sequential dependencies, and which ones brain and model respond to");
+  };
+
   window.SCHEMATICS = F;
 })();
