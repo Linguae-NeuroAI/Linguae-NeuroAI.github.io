@@ -285,7 +285,7 @@
         <p class="way">${isBrain ? "From AI to the brain" : "From the brain to AI"}</p>
         <h1>${isBrain ? "AI for the brain" : "The brain for AI"}</h1>
         <p>${isBrain
-          ? "We record language in the human brain at every scale available, and use neural models and new analysis methods to explain what we see. Choose a recording method on the cortex to see the projects that use it."
+          ? "We study language processing across a wide range of resolutions, from large neuronal populations down to single neurons. Choose a recording method on the cortex to see the projects that use it."
           : "We take language models apart to find their mechanisms, test them where human language is hardest, and build architectures that carry the constraints of the brain. Choose a part of the network to see the work behind it."}</p>
       </section>
       <section class="stage">
