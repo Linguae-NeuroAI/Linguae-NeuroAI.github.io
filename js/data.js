@@ -226,6 +226,32 @@ window.SITE = {
       venue: "KDD 2015", url: "https://doi.org/10.1145/2783258.2788604" }
   ],
 
+  /* Collaborating centres and researchers, shown on the Team page */
+  collab: {
+    centres: [
+      { kind: "Neuroimaging", items: [
+        { name: "NeuroSpin", where: "CEA Paris-Saclay" },
+        { name: "Paris Brain Institute (ICM)", where: "Pitié-Salpêtrière Hospital, Paris" } ] },
+      { kind: "Intracranial recordings", items: [
+        { name: "Itzhak Fried's lab", where: "University of California, Los Angeles (UCLA)" },
+        { name: "Nitin Tandon's lab", where: "UTHealth Houston" },
+        { name: "Florian Mormann's lab", where: "University of Bonn" },
+        { name: "Genela Morris and Ido Strauss", where: "Tel Aviv Sourasky Medical Center (Ichilov)" } ] }
+    ],
+    researchers: [
+      { name: "Emmanuel Chemla", where: "LSCP, ENS-PSL" },
+      { name: "Philippe Schlenker", where: "Institut Jean-Nicod, ENS-PSL, and New York University" },
+      { name: "Marco Baroni", where: "ICREA and Universitat Pompeu Fabra" },
+      { name: "Stanislas Dehaene", where: "NeuroSpin and Collège de France" },
+      { name: "Naama Friedmann", where: "Tel Aviv University" },
+      { name: "Dieuwke Hupkes", where: "Meta AI" },
+      { name: "Jean-Rémi King", where: "Meta AI and ENS-PSL" },
+      { name: "Salvador Mascarenhas", where: "Institut Jean-Nicod, ENS-PSL" },
+      { name: "Christophe Pallier", where: "NeuroSpin" },
+      { name: "Bertrand Thirion", where: "Inria and NeuroSpin" }
+    ]
+  },
+
   /* Add team members here: { name, role, topic, photo, url } */
   team: {
     lead: {

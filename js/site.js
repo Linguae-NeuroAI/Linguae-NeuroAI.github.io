@@ -327,12 +327,12 @@
   };
 
   const team = () => {
-    const L = D.team.lead, initials = L.name.split(" ").map(w => w[0]).join("");
+    const L = D.team.lead;
     return `
     <div class="wrap">
       <section class="page-head"><h1>Team</h1></section>
       <section class="lead" style="margin-top:28px">
-        <div class="portrait" aria-hidden="true">${initials}<img src="${L.photo}" alt="" style="display:none"></div>
+        <img class="portrait" src="${L.photo}" alt="Portrait of ${L.name}" width="200" height="200">
         <div><h2>${L.name}</h2><p class="role">${L.role}</p><p>${L.bio}</p>
           <p><a href="${L.url}">Personal page</a> &nbsp; <a href="${L.scholar}">Google Scholar</a></p></div>
       </section>
@@ -342,6 +342,12 @@
       ${D.team.visitors.length ? `<div class="section-head"><h2>Visiting researchers</h2></div><p>${D.team.visitors.map(esc).join(", ")}</p>` : ""}
       ${D.team.alumni.length ? `<div class="section-head"><h2>Alumni</h2></div>
       <ul class="rows">${D.team.alumni.map(m => `<li><span class="yr">${esc(m.years)}</span><div><h3>${esc(m.name)}</h3><p class="meta">${esc(m.role)}${m.topic ? `. ${esc(m.topic)}` : ""}</p></div></li>`).join("")}</ul>` : ""}
+      <div class="section-head"><h2>Collaborating centres</h2><p>Neuroimaging and clinical centres where we record brain data.</p></div>
+      <div class="collab">
+        ${D.collab.centres.map(g => `<div><h3>${g.kind}</h3><ul>${g.items.map(c => `<li><b>${esc(c.name)}</b><br><span>${esc(c.where)}</span></li>`).join("")}</ul></div>`).join("")}
+      </div>
+      <div class="section-head"><h2>Collaborators</h2></div>
+      <ul class="people-list">${D.collab.researchers.map(r => `<li><b>${esc(r.name)}</b><br><span>${esc(r.where)}</span></li>`).join("")}</ul>
       <section class="join">
         <h2>Join us</h2>
         <p>We welcome students and researchers from neuroscience, linguistics, computer science and physics who want to work between brains and models. Master's internships, PhD projects and postdoctoral positions open regularly.</p>
@@ -359,8 +365,6 @@
     main.innerHTML = view === "home" ? home() : view === "team" ? team() : view === "publications" ? publications(sub) : direction(view, sub);
     document.querySelectorAll("[data-nav]").forEach(a => a.classList.toggle("on", a.dataset.nav === view));
     document.title = { home: "Linguae-NeuroAI, ENS Paris", brain: "AI for the brain | Linguae-NeuroAI", models: "The brain for AI | Linguae-NeuroAI", publications: "Publications | Linguae-NeuroAI", team: "Team | Linguae-NeuroAI" }[view];
-    const img = main.querySelector(".portrait img");
-    if (img) img.onload = () => { const d = img.parentNode; d.textContent = ""; img.style.display = "block"; img.className = "portrait"; d.replaceWith(img); };
     if (last === view && sub) { const l = document.getElementById("list"); if (l) l.scrollIntoView({ block: "start" }); }
     else if (last !== null) window.scrollTo(0, 0);
     last = view;
