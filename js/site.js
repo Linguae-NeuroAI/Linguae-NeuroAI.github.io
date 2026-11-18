@@ -229,7 +229,7 @@
       <section class="hero">
         <div class="hero-head">
           <h1>Linguae-NeuroAI</h1>
-          <p class="lede">We study how language is computed, in human brains and in artificial neural networks.</p>
+          <p class="lede">We study the neural mechanisms that underlie language processing, in the human brain and in neural AI models.</p>
         </div>
         ${loop()}
       </section>
