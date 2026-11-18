@@ -291,8 +291,8 @@
       <section class="stage">
         ${isBrain ? brainDiagram(sub) : modelDiagram(sub)}
         <div class="picked" aria-live="polite">
-          ${pick ? `<h2>${pick.label}</h2><p>${pick.blurb}</p>` : `<h2>${isBrain ? "Five windows on the brain" : "Five ways into the model"}</h2><p>${isBrain
-            ? "No single method sees everything. Single neurons give the code, intracranial EEG and MEG the timing, fMRI the map, and behaviour the test."
+          ${pick ? `<h2>${pick.label}</h2><p>${pick.blurb}</p>` : `<h2>${isBrain ? "Complementary recording methods" : "Five ways into the model"}</h2><p>${isBrain
+            ? "We combine several methods for recording brain activity, each with its own strengths. MEG has high temporal resolution, but the sources of the signal cannot be localized precisely. fMRI, in contrast, has good spatial resolution but poor temporal resolution. Intracranial recordings, such as sEEG, have both high spatial and high temporal resolution, but they do not cover the whole brain, since electrode placement is decided by clinical needs. Finally, single-neuron recordings have the highest spatiotemporal resolution and signal-to-noise ratio, which the study of neural mechanisms requires, but they capture only a tiny fraction of the neurons in a given region."
             : "Mechanisms inside the network, the geometry of what it represents, its limits against human performance, new architectures, and how knowledge appears during learning."}</p>`}
           <p class="hint">${pick ? `${papers.length} ${papers.length === 1 ? "paper" : "papers"} below.` : "The drawing is clickable."}</p>
         </div>
