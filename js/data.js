@@ -241,14 +241,11 @@ window.SITE = {
     researchers: [
       { name: "Emmanuel Chemla", where: "LSCP, ENS-PSL" },
       { name: "Philippe Schlenker", where: "Institut Jean-Nicod, ENS-PSL, and New York University" },
-      { name: "Marco Baroni", where: "ICREA and Universitat Pompeu Fabra" },
       { name: "Stanislas Dehaene", where: "NeuroSpin and Collège de France" },
       { name: "Naama Friedmann", where: "Tel Aviv University" },
-      { name: "Dieuwke Hupkes", where: "Meta AI" },
       { name: "Jean-Rémi King", where: "Meta AI and ENS-PSL" },
       { name: "Salvador Mascarenhas", where: "Institut Jean-Nicod, ENS-PSL" },
-      { name: "Christophe Pallier", where: "NeuroSpin" },
-      { name: "Bertrand Thirion", where: "Inria and NeuroSpin" }
+      { name: "Christophe Pallier", where: "NeuroSpin" }
     ]
   },
 
