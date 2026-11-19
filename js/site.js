@@ -39,7 +39,6 @@
 
   const loop = () => {
     const net = network(800, 262, 80, [3, 5, 5, 5, 3], 48, 11);
-    const words = [["The", 498], ["keys", 546], ["to", 590], ["the", 624], ["cabinet", 686], ["are", 754]];
     return `
     <svg class="loop" viewBox="0 0 1200 520" role="group" aria-label="The two directions of the team's research, linking the brain and neural models">
       <defs>
@@ -49,18 +48,15 @@
       <path d="M900 118 C780 30,470 30,330 112" fill="none" stroke="url(#gTop)" stroke-width="3" opacity=".35"/>
       <path class="flow" d="M900 118 C780 30,470 30,330 112" fill="none" stroke="url(#gTop)" stroke-width="5"/>
       <path d="M346 96 L326 115 L352 120" fill="none" stroke="var(--brain)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M430 384 C450 520,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="3" opacity=".35"/>
-      <path class="flow" d="M430 384 C450 520,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="5"/>
+      <path d="M440 392 C470 540,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="3" opacity=".35"/>
+      <path class="flow" d="M440 392 C470 540,790 512,900 412" fill="none" stroke="url(#gBot)" stroke-width="5"/>
       <path d="M878 406 L904 409 L886 430" fill="none" stroke="var(--model)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
       <a href="#brain"><text class="arc-label" x="615" y="104" text-anchor="middle" fill="var(--brain)">AI for the brain</text></a>
       <text class="arc-sub" x="615" y="128" text-anchor="middle">models and methods that explain neural recordings</text>
       <a href="#models"><text class="arc-label" x="615" y="404" text-anchor="middle" fill="var(--model)">The brain for AI</text></a>
-      <text class="arc-sub" x="615" y="428" text-anchor="middle">neural constraints that make models more human</text>
+      <text class="arc-sub" x="615" y="428" text-anchor="middle">neural constraints that make models more human-like</text>
 
-      <path d="M546 250 C546 196,754 196,754 250" fill="none" stroke="var(--loop)" stroke-width="2.5"/>
-      ${words.map(([w, x], i) => `<text class="sentence" x="${x}" y="276" text-anchor="middle" fill="${i === 1 || i === 5 ? "var(--loop)" : "var(--ink)"}">${w}</text>`).join("")}
-      <text class="arc-sub" x="626" y="308" text-anchor="middle">a dependency both systems must track</text>
 
       <a href="#brain" aria-label="The brain: projects on intracranial recordings, MEG, fMRI and behaviour">
         <rect class="plate" x="40" y="96" width="420" height="420" rx="28" fill="var(--brain-tint)" opacity=".0"/>
