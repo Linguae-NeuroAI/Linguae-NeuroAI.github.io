@@ -321,7 +321,8 @@
     const ms = D.team.members.filter(m => m.group === g);
     if (!ms.length) return "";
     return `<div class="section-head"><h2>${title}</h2></div><div class="people">${ms.map(m => `
-      <div class="person"><h3>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h3>
+      <div class="person">${m.photo ? `<img class="avatar" src="${m.photo}" alt="Portrait of ${esc(m.name)}" width="72" height="72">` : `<div class="avatar" aria-hidden="true">${esc(m.name.split(/[\s-]+/).filter(w => /^[A-ZÀ-Ý]/.test(w)).map(w => w[0]).slice(0, 2).join(""))}</div>`}
+        <h3>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h3>
         <p class="role">${esc(m.role || defRole)}${m.co ? `, co-supervised with ${esc(m.co)}` : ""}</p>
         ${m.topic ? `<p class="topic">${esc(m.topic)}</p>` : ""}</div>`).join("")}</div>`;
   };

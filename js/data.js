@@ -259,10 +259,11 @@ window.SITE = {
       scholar: "https://scholar.google.com/citations?user=cNnJ5YUAAAAJ",
       bio: "Yair Lakretz is a CNRS research scientist at the Laboratoire de Sciences Cognitives et Psycholinguistique (LSCP), in the Department of Cognitive Studies of the École normale supérieure, where he heads the Linguae-NeuroAI team. He is a fellow of the Paris Artificial Intelligence Research Institute (PRAIRIE). His work asks how linguistic structure, from sounds and letters to syntax and meaning, is encoded and computed in the human brain and in artificial neural networks."
     },
-    /* group: "phd", "staff", "masters". co: co-supervisor. Leave topic empty if unknown. */
+    /* group: "phd", "staff", "masters". co: co-supervisor. Leave topic empty if unknown.
+       photo: optional square picture in assets/team/ (initials are shown otherwise). */
     members: [
       { group: "phd", name: "Michael Goodale", co: "Salvador Mascarenhas", topic: "Meta-learning and inductive biases in neural networks" },
-      { group: "phd", name: "Pablo Diego-Simón", co: "Jean-Rémi King", topic: "Syntax in language models (polar probes)" },
+      { group: "phd", name: "Pablo Diego-Simón", co: "Jean-Rémi King", topic: "Syntax in language models (polar probes)", photo: "assets/team/pablo-diego-simon.jpg" },
       { group: "phd", name: "Louis Jalouzot", co: "Christophe Pallier", topic: "Encoding models and decoding language from fMRI" },
       { group: "phd", name: "Maxence Pajot", co: "Stanislas Dehaene", topic: "" },
       { group: "phd", name: "Victor Rambaud", co: "Salvador Mascarenhas", topic: "Cognitive maps in Transformers" },

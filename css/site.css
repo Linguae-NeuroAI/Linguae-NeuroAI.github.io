@@ -139,6 +139,7 @@ a:hover .hit, a:focus-visible .hit { opacity: 1; }
 .lead .role { font: 600 1rem var(--display); color: var(--soft); margin: 4px 0 12px; }
 .people { display: grid; align-items: start; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; padding: 8px 0 24px; }
 .person { background: var(--card); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; display: grid; place-items: center; margin-bottom: 12px; background: linear-gradient(135deg, var(--brain-tint), var(--model-tint)); font: 700 1.4rem var(--display); color: var(--loop); }
 .person .role { font: 400 .9rem/1.4 var(--display); color: var(--soft); margin: 4px 0 0; }
 .person .topic { font-size: .95rem; line-height: 1.5; margin: 10px 0 0; }
 .slot { border: 1.5px dashed var(--soft); border-radius: 16px; padding: 18px; color: var(--soft); font-size: .95rem; }
