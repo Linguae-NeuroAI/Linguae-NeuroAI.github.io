@@ -267,7 +267,7 @@ window.SITE = {
       { group: "phd", name: "Louis Jalouzot", co: "Christophe Pallier", topic: "Encoding models and decoding language from fMRI" },
       { group: "phd", name: "Maxence Pajot", co: "Stanislas Dehaene", topic: "", photo: "assets/team/maxence-pajot.jpg" },
       { group: "phd", name: "Victor Rambaud", co: "Salvador Mascarenhas", topic: "Cognitive maps in Transformers", photo: "assets/team/victor-rambaud.jpg" },
-      { group: "phd", name: "Malo Renaudin", co: "", topic: "" },
+      { group: "phd", name: "Malo Renaudin", co: "Tal Linzen (NYU)", topic: "" },
       { group: "phd", name: "Boubacar Sow", co: "", topic: "" },
       { group: "staff", name: "Nafiseh Momeni", role: "Research assistant", co: "", topic: "Binding of phoneme identity and position; intracranial data analysis" },
       { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings" },
