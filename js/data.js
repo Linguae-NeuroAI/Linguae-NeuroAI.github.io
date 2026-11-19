@@ -271,7 +271,7 @@ window.SITE = {
       { group: "phd", name: "Boubacar Sow", co: "", topic: "" },
       { group: "staff", name: "Nafiseh Momeni", role: "Research assistant", co: "", topic: "Binding of phoneme identity and position; intracranial data analysis" },
       { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings" },
-      { group: "masters", name: "Sara Martina", role: "Erasmus Mundus master's intern", co: "", topic: "Long-range agreement in language models" },
+      { group: "masters", name: "Sara Martina", role: "Erasmus Mundus master's intern, University of Trento", co: "", topic: "Long-range agreement in language models" },
       { group: "masters", name: "Yutong (Tony) Zhou", co: "Philippe Schlenker", topic: "Semantic and pragmatic inference in vision-language models" },
       { group: "masters", name: "Baptiste Loreau Unger", co: "", topic: "" }
     ],

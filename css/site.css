@@ -137,7 +137,7 @@ a:hover .hit, a:focus-visible .hit { opacity: 1; }
 .lead { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; padding: 28px; background: var(--card); border: 1.5px solid var(--line); border-radius: 20px; }
 .portrait { display: block; width: 200px; height: 200px; border-radius: 50%; object-fit: cover; background: linear-gradient(135deg, var(--brain-tint), var(--model-tint)); display: grid; place-items: center; font: 700 3.4rem var(--display); color: var(--loop); }
 .lead .role { font: 600 1rem var(--display); color: var(--soft); margin: 4px 0 12px; }
-.people { display: grid; align-items: start; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; padding: 8px 0 24px; }
+.people { display: flex; flex-direction: column; gap: 16px; padding: 8px 0 24px; }
 .person { background: var(--card); border: 1.5px solid var(--line); border-radius: 16px; padding: 18px; }
 .avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; display: grid; place-items: center; margin-bottom: 12px; background: linear-gradient(135deg, var(--brain-tint), var(--model-tint)); font: 700 1.4rem var(--display); color: var(--loop); }
 .person .role { font: 400 .9rem/1.4 var(--display); color: var(--soft); margin: 4px 0 0; }

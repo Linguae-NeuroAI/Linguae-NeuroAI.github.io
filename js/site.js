@@ -317,14 +317,17 @@
     </div>`;
   };
 
+  const initialsOf = n => n.split(/[\s-]+/).filter(w => /^[A-ZÀ-Ý]/.test(w)).map(w => w[0]).slice(0, 2).join("");
   const group = (g, title, defRole) => {
     const ms = D.team.members.filter(m => m.group === g);
     if (!ms.length) return "";
     return `<div class="section-head"><h2>${title}</h2></div><div class="people">${ms.map(m => `
-      <div class="person">${m.photo ? `<img class="avatar" src="${m.photo}" alt="Portrait of ${esc(m.name)}" width="72" height="72">` : `<div class="avatar" aria-hidden="true">${esc(m.name.split(/[\s-]+/).filter(w => /^[A-ZÀ-Ý]/.test(w)).map(w => w[0]).slice(0, 2).join(""))}</div>`}
-        <h3>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h3>
-        <p class="role">${esc(m.role || defRole)}${m.co ? `, co-supervised with ${esc(m.co)}` : ""}</p>
-        ${m.topic ? `<p class="topic">${esc(m.topic)}</p>` : ""}</div>`).join("")}</div>`;
+      <section class="lead">
+        ${m.photo ? `<img class="portrait" src="${m.photo}" alt="Portrait of ${esc(m.name)}" width="200" height="200">` : `<div class="portrait" aria-hidden="true">${esc(initialsOf(m.name))}</div>`}
+        <div><h2>${m.url ? `<a href="${m.url}">${esc(m.name)}</a>` : esc(m.name)}</h2>
+          <p class="role">${esc(m.role || defRole)}${m.co ? `, co-supervised with ${esc(m.co)}` : ""}</p>
+          ${m.text ? `<p>${esc(m.text)}</p>` : m.topic ? `<p>${esc(m.topic)}</p>` : ""}</div>
+      </section>`).join("")}</div>`;
   };
 
   const team = () => {
