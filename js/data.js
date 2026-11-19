@@ -272,11 +272,11 @@ window.SITE = {
       { group: "staff", name: "Nafiseh Momeni", role: "Research assistant", co: "", topic: "Binding of phoneme identity and position; intracranial data analysis" },
       { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings" },
       { group: "masters", name: "Sara Martina", role: "Erasmus Mundus master's intern, University of Trento", co: "", topic: "Long-range agreement in language models" },
-      { group: "masters", name: "Yutong (Tony) Zhou", co: "Philippe Schlenker", topic: "Semantic and pragmatic inference in vision-language models" },
-      { group: "masters", name: "Baptiste Loreau Unger", co: "", topic: "" }
+      { group: "masters", name: "Yutong (Tony) Zhou", co: "Philippe Schlenker", topic: "Semantic and pragmatic inference in vision-language models" }
     ],
     visitors: ["Álvaro Cabana", "Bruno Bianchi"],
     alumni: [
+      { name: "Baptiste Loreau Unger", years: "2026", role: "Master's intern", topic: "" },
       { name: "Louis Hayot", years: "2026", role: "Master's intern", topic: "Dual-route model of single-word processing, co-supervised with Emmanuel Mandonnet" },
       { name: "Karina Musina", years: "2026", role: "Master's intern", topic: "Letter identity and letter position in vision models" },
       { name: "Daniel Dager", years: "2025", role: "Master's intern", topic: "Neural model of word repetition" },
