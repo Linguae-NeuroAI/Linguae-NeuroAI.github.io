@@ -270,7 +270,7 @@ window.SITE = {
       { group: "phd", name: "Malo Renaudin", co: "Tal Linzen (NYU)", topic: "Working-memory constrained neural models, and the processing of long-range agreement in intracranial and fMRI data" },
       { group: "phd", name: "Boubacar Sow", co: "Pierre Bourdillon", topic: "Working-memory constrained neural models, and intracranial analyses of single-word processing", photo: "assets/team/boubacar-sow.jpg" },
       { group: "staff", name: "Nafiseh Momeni", role: "Research assistant", co: "", topic: "Binding of phoneme identity and position; intracranial data analysis" },
-      { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings" },
+      { group: "masters", name: "Étienne Lefranc", co: "", topic: "Decoding language from intracranial recordings", photo: "assets/team/etienne-lefranc.jpg" },
       { group: "masters", name: "Sara Martina", role: "Erasmus Mundus master's intern, University of Trento", co: "", topic: "Long-range agreement in language models" },
       { group: "masters", name: "Yutong (Tony) Zhou", co: "Philippe Schlenker", topic: "Semantic and pragmatic inference in vision-language models" }
     ],
