@@ -236,7 +236,9 @@ window.SITE = {
         { name: "Itzhak Fried's lab", where: "University of California, Los Angeles (UCLA)" },
         { name: "Nitin Tandon's lab", where: "UTHealth Houston" },
         { name: "Florian Mormann's lab", where: "University of Bonn" },
-        { name: "Genela Morris and Ido Strauss", where: "Tel Aviv Sourasky Medical Center (Ichilov)" } ] }
+        { name: "Genela Morris and Ido Strauss", where: "Tel Aviv Sourasky Medical Center (Ichilov)" },
+        { name: "Lariboisière Hospital", where: "AP-HP, Paris" },
+        { name: "Rothschild Foundation Hospital", where: "Paris" } ] }
     ],
     researchers: [
       { name: "Emmanuel Chemla", where: "LSCP, ENS-PSL" },
@@ -245,7 +247,8 @@ window.SITE = {
       { name: "Naama Friedmann", where: "Tel Aviv University" },
       { name: "Jean-Rémi King", where: "Meta AI and ENS-PSL" },
       { name: "Salvador Mascarenhas", where: "Institut Jean-Nicod, ENS-PSL" },
-      { name: "Christophe Pallier", where: "NeuroSpin" }
+      { name: "Christophe Pallier", where: "NeuroSpin" },
+      { name: "Emmanuel Mandonnet", where: "Neurosurgery, Lariboisière Hospital, Paris" }
     ]
   },
 
