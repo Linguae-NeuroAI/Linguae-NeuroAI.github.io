@@ -315,7 +315,8 @@
 
   const initialsOf = n => n.split(/[\s-]+/).filter(w => /^[A-ZÀ-Ý]/.test(w)).map(w => w[0]).slice(0, 2).join("");
   const group = (g, title, defRole) => {
-    const ms = D.team.members.filter(m => m.group === g);
+    // members with a photo first, otherwise in the order of data.js
+    const ms = D.team.members.filter(m => m.group === g).sort((a, b) => (b.photo ? 1 : 0) - (a.photo ? 1 : 0));
     if (!ms.length) return "";
     return `<div class="section-head"><h2>${title}</h2></div><div class="people">${ms.map(m => `
       <section class="lead">
